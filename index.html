@@ -7,11 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   </head>
-  <body>
-    <h1>CSS GRID</h1>
+
+  <style>
+#gridContainer{
+  display: grid;
+  grid-template-rows: 1em 50vh auto 10em;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-areas: "navi navi navi navi"
+                       "heroes heroes heroes heroes"
+                       ". contents contents2 ."
+                       "footers footers footers footers";
+}
+#nav{
+  grid-area: navi;
+}
+#hero{
+  grid-area: heroes;
+  width: 100%;
+  height: auto;
+}
+#content{
+  grid-area: contents;
+  width: 100%;
+  height: auto;
+}
+#content2{
+  grid-area: contents2;
+  width: 100%;
+  height: auto;
+}
+#footer{
+  grid-area: footers;
+  width: 100%;
+  height: auto;
+}
+</style>
+
+  <body id='gridContainer'>
 
 
-
+<nav id='nav'>navnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnavnav</nav>
+<hero id='hero'>heroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroheroherohero</hero>
+<content id='content'>contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</content>
+<content2 id='content2'>content2content2content2content2content2content2content2content2content2content2content2content2content2</content2>
+<footer id='footer'>footerfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterf</footer>
 
 
 
