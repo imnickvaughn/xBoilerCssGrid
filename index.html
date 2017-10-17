@@ -8,9 +8,13 @@
 
   </head>
 
-  <style>
+<style>
 #gridContainer{
   display: grid;
+  width:100vw;
+  height:100vh;
+  font-size:100vh 100vw;
+  opacity:40%;
   grid-template-rows: 1em 50vh auto 10em;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-areas: "navi navi navi navi"
@@ -20,24 +24,31 @@
 }
 #nav{
   grid-area: navi;
+  background-color: red;
+  width: 100%;
+  height: auto;
 }
 #hero{
   grid-area: heroes;
+  background-color: blue;
   width: 100%;
   height: auto;
 }
 #content{
   grid-area: contents;
+  background-color: green;
   width: 100%;
   height: auto;
 }
 #content2{
   grid-area: contents2;
+  background-color: purple;
   width: 100%;
   height: auto;
 }
 #footer{
   grid-area: footers;
+  background-color: orange;
   width: 100%;
   height: auto;
 }
